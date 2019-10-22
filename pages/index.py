@@ -24,22 +24,22 @@ smaller size screens Bootstrap will allow the rows to wrap so as not to squash
 the content.
 """
 
+
 column1 = dbc.Col(
     [
         dcc.Markdown(
             """
         
-            ## Value Proposition
+            ## What does it take?
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            This app helps determine how many games someone would play in an NBA season dependent on their prior stats.
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+            Learn if your over or under utilizing your bench based on their stats!
 
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
-
+            Or plug in your own stats and see how you compare against the NBA!
             """
         ),
-        dcc.Link(dbc.Button('Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Make my prediction!', color='primary'), href='/predictions')
     ],
     md=4,
 )
