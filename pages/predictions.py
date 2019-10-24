@@ -21,13 +21,6 @@ column1 = dbc.Col(
             """
 
 	),
-	dcc.Markdown(
-	    """
-
-	    ### Age
- 
-	    """
-	),
 	dcc.Input(
 	    id='Age',
 	    placeholder='Age',
