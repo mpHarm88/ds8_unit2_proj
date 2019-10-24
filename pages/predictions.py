@@ -21,70 +21,66 @@ column1 = dbc.Col(
             """
 
 	),
+	dcc.Markdown(
+	    """
+
+	    ### Age
+ 
+	    """
+	),
 	dcc.Input(
 	    id='Age',
 	    placeholder='Age',
-	    type='number',
-	    value=""
+	    type='number'
 	),
 	dcc.Input(
 	    id='BLK',
 	    placeholder='Blocks (BLK)',
-	    type='number',
-	    value=""
+	    type='number'
 	),
 	dcc.Input(
 	    id='STL',
 	    placeholder='Steals (STL)',
-	    type='number',
-	    value=""
+	    type='number'
 	),
 	dcc.Input(
 	    id='AST',
 	    placeholder='Assits (AST)',
-	    type='number',
-	    value=""
+	    type='number'
 	),
 	dcc.Input(
 	    id='TRB',
 	    placeholder='Total Rebounds (TRB)',
-	    type='number',
-	    value=""
+	    type='number'
 	),
 	dcc.Input(
 	    id='PTS',
 	    placeholder='Points (PTS)',
-	    type='number',
-	    value=""
+	    type='number'
 	),
 	dcc.Dropdown(
 	    id='Pos',
 	    options = [
-		{'label': 'PF', 'value': 'PF'},
-		{'label': 'SG', 'value': 'SG'},
-		{'label': 'C', 'value': 'C'},
-		{'label': 'SF', 'value': 'SF'},
-		{'label': 'PG', 'value': 'PG'},
-		{'label': 'G', 'value': 'G'},
-		{'label': 'F', 'value': 'F'},
-		{'label': 'F-C', 'value': 'F-C'},
-		{'label': 'G-F', 'value': 'G-F'},
-		{'label': 'F-G', 'value': 'F-G'},
-		{'label': 'C-F', 'value': 'C-F'},
-		{'label': 'C-PF', 'value': 'C-PF'},
-		{'label': 'PG-SG', 'value': 'PG-SG'},
-		{'label': 'SF-SG', 'value': 'SF-SG'},
-		{'label': 'PF-C', 'value': 'PF-C'},
-		{'label': 'SG-SF', 'value': 'SG-SF'},
-		{'label': 'PF-SF', 'value': 'PF-SF'},
-		{'label': 'SF-PF', 'value': 'SF-PF'},
-		{'label': 'SG-PF', 'value': 'SG-PF'},
-		{'label': 'C-SF', 'value': 'C-SF'},
-		{'label': 'SF-PG', 'value': 'SF-PG'},
-		{'label': 'PG-SF', 'value': 'PG-SF'},
-		{'label': 'SG-PG', 'value': 'SG-PG'},
+		{'label': 'PF', 'value': 4},
+		{'label': 'SG', 'value': 5},
+		{'label': 'C', 'value': 2},
+		{'label': 'SF', 'value': 3},
+		{'label': 'PG', 'value': 1},
+		{'label': 'G', 'value': 7},
+		{'label': 'F', 'value': 8},
+		{'label': 'F-C', 'value': 9},
+		{'label': 'G-F', 'value': 12},
+		{'label': 'F-G', 'value': 6},
+		{'label': 'C-F', 'value': 10},
+		{'label': 'C-PF', 'value': 13},
+		{'label': 'PG-SG', 'value': 15},
+		{'label': 'SF-SG', 'value': 19},
+		{'label': 'PF-C', 'value': 11},
+		{'label': 'SG-SF', 'value': 14},
+		{'label': 'PF-SF', 'value': 16},
+		{'label': 'SF-PF', 'value': 18}, 
+		{'label': 'SF-PG', 'value': 20},
 	    ],
-	    value = 'Position',
 	    placeholder='Position (POS)'
 	)
     ],
