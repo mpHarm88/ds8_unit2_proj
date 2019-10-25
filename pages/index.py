@@ -40,8 +40,9 @@ column1 = dbc.Col(
 
             Learn if your over or under utilizing your bench based on their stats!
 
-            Or plug in your own stats and see how you compare against the NBA!
-            """
+            Or plug in your own stats and see how you compare against the NBA! Try out the interactive chart to the right and zoom in on your favorites by making a box over the section you want to examine.👉🏼
+
+	    """
         ),
         dcc.Link(dbc.Button('Make my prediction!', color='primary'), href='/predictions')
     ],
