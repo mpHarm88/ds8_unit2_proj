@@ -24,6 +24,10 @@ smaller size screens Bootstrap will allow the rows to wrap so as not to squash
 the content.
 """
 
+url = "https://raw.githubusercontent.com/mpHarm88/ds8_unit2_proj/master/nba-players-stats(1)/Seasons_Stats.csv"
+season = pd.read_csv(url)
+season = season[['Year','PTS', 'Player', 'G', 'Age', 'PF']]
+season = season.rename(columns={'PTS':'Total Points', 'G':'Games Played', 'PF':'Personal Fouls'})
 
 column1 = dbc.Col(
     [
@@ -45,9 +49,8 @@ column1 = dbc.Col(
 )
 
 gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
-
+fig = px.scatter(season, x="Year", y="Total Points", hover_data=['Player', 'Age', 'Games Played', 'Personal Fouls'])
+fig.update_layout(title='Shooting Your Shot - NBA Point Totals')
 column2 = dbc.Col(
     [
         dcc.Graph(figure=fig),
